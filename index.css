@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body {
+  background-color: #12122a;
+}
+
+.navbar-wrapper {
+  padding: 1.3rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #12122a;
+}
+.navbar-wrapper .wrapper.container-fluid {
+  padding: 0px;
+}
+.navbar-wrapper .wrapper .nav-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+.navbar-wrapper .wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-wrapper .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-wrapper .navbar-collapse.show .navbar-nav {
+  background: #202131;
+}
+.navbar-wrapper .navbar-collapse .navbar-nav {
+  margin-top: 10px;
+}
+.navbar-wrapper .navbar-collapse .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.navbar-wrapper .navbar-collapse .navbar-nav .nav-link:focus, .navbar-wrapper .navbar-collapse .navbar-nav .nav-link:hover, .navbar-wrapper .navbar-collapse .navbar-nav .nav-link.active {
+  color: #f4b942;
+}
+
+.hero-section-wrapper {
+  padding: 100px 0px;
+}
+.hero-section-wrapper .hero-section {
+  text-align: center;
+}
+.hero-section-wrapper .hero-section .title {
+  font-size: 176px;
+}
+.hero-section-wrapper .hero-section .sub-title {
+  font-size: 55px;
+}
+.hero-section-wrapper .get-resume-wrapper {
+  display: flex;
+  gap: 45px;
+  padding: 15px;
+  justify-content: center;
+}
+.hero-section-wrapper .get-resume-wrapper .get-email-input {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  background: #202131;
+  border-color: transparent;
+  max-width: 500px;
+  color: rgba(255, 255, 255, 0.6588235294);
+}
+.hero-section-wrapper .get-resume-wrapper .get-email-input:focus-visible {
+  outline: 0;
+}
+.hero-section-wrapper .get-resume-wrapper .resume-btn {
+  text-decoration: none;
+  color: #000000;
+  background-color: #f4b942;
+  border-radius: 2px;
+  padding: 15px;
+  text-align: center;
+  word-spacing: 5px;
+  height: 100%;
+  width: 100%;
+  border-color: transparent;
+  max-width: 350px;
+}/*# sourceMappingURL=index.css.map */
