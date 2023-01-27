@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #ffffff;
+    // background: #ffffff;
 }
 
 h1,
@@ -14,25 +14,115 @@ h6,
 p {
     margin: 0;
     padding: 0;
+    color: #ffffff;
+}
+
+body {
+    background-color: #12122a;
 }
 
 .navbar-wrapper {
-    background-color: #282828;
+    // background-color: #282828;
     padding: 1.3rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background:#12122a;
+
+    .wrapper {
+
+        &.container-fluid {
+            padding: 0px;
+        }
+
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
 
     .navbar-collapse {
         justify-content: flex-end;
 
-        .navbar-nav {
+        &.show {
+            .navbar-nav {
+                background: #202131;
+            }
+        }
+
+        .navbar-nav {           
+            margin-top: 10px;
+
             .nav-link {
                 color: #ffffff;
                 font-size: 18px;
-                text-align: center;
-                
-              &.active {
-                color: #425cbb;
-              }  
-            } 
+                padding: 10px 20px;
+
+                &:focus,
+                &:hover,
+                &.active {
+                    color: #f4b942;
+                }
+            }
+        }
+    }
+}
+
+.hero-section-wrapper {
+    padding: 100px 0px;
+    .hero-section {
+        text-align: center;
+
+        .title {
+            font-size: 176px;
+        }
+
+        .sub-title {
+            font-size: 55px;
+        }
+    }
+
+    .get-resume-wrapper {
+
+        display: flex;
+        gap: 45px;
+        padding: 15px;
+        justify-content: center;
+
+        .get-email-input {
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+            background: #202131;
+            border-color: transparent;
+            max-width: 500px;
+            color: #ffffffa8;
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        .resume-btn {
+            text-decoration: none;
+            color: #000000;
+            background-color: #f4b942;
+            border-radius: 2px;
+            padding: 15px;
+            text-align: center;
+            word-spacing: 5px;
+            height: 100%;
+            width: 100%;
+            border-color: transparent;
+            max-width: 350px;
         }
     }
 }
