@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-wrapper {
+    background-color: #282828;
+    padding: 1.3rem 0;
+
+    .navbar-collapse {
+        justify-content: flex-end;
+
+        .navbar-nav {
+            .nav-link {
+                color: #ffffff;
+                font-size: 18px;
+                text-align: center;
+                
+              &.active {
+                color: #425cbb;
+              }  
+            } 
+        }
+    }
+}
